@@ -74,5 +74,18 @@ public class Test
             System.out.println("Size:" + robots[i].robotSize);
             robots[i].moveForward(7);
         }
+       Car car1 = new Car();
+       
+       car1.carModel = "Tesla";
+       car1.carSpeed = "70";
+       
+       Car [] cars = new Car [1];
+          
+       cars[0] = car1;
+       
+       System.out.println("Model:" + robots[0].robotName);
+       System.out.println("Speed:" + robots[0].robotSize);
+       
+       
     }
 }
