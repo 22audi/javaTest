@@ -23,5 +23,12 @@ public class Robot
     public void moveForward(int y)
     {
         System.out.println("Robot move forward" + y + "spaces");
+    
     }
+   public class Car
+   {
+      String carModel;
+      int carSpeed;
+         public Car()
+   }
 }
