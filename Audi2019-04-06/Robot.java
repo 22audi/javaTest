@@ -25,10 +25,14 @@ public class Robot
         System.out.println("Robot move forward" + y + "spaces");
     
     }
-   public class Car
-   {
-      String carModel;
-      int carSpeed;
-         public Car()
-   }
+    
+    public boolean equals(Robot compare){
+        if(compare.robotName == this.robotName && compare.robotSize == this.robotSize){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }    
+   
 }

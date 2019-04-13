@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 /**
  * test 
  *
@@ -53,9 +53,21 @@ public class Test
         i += 1;
         }while (i <= 4);
         
-        Robot robot1 = new Robot();
-        
-        robot1.robotName = "Rob";
+       
+       Car car1 = new Car();
+       
+       car1.carModel = "Tesla";
+       car1.carSpeed = 70;
+       
+       Car [] cars = new Car [1];
+          
+       cars[0] = car1;
+       
+       System.out.println("the car model is " + cars[0].carModel);
+       
+       Robot robot1 = new Robot();
+       
+       robot1.robotName = "Rob";
         robot1.robotSize = 6;
         
         Robot robot2 = new Robot();
@@ -74,18 +86,40 @@ public class Test
             System.out.println("Size:" + robots[i].robotSize);
             robots[i].moveForward(7);
         }
-       Car car1 = new Car();
-       
-       car1.carModel = "Tesla";
-       car1.carSpeed = "70";
-       
-       Car [] cars = new Car [1];
-          
-       cars[0] = car1;
-       
-       System.out.println("Model:" + robots[0].robotName);
+
+System.out.println("Model:" + robots[0].robotName);
        System.out.println("Speed:" + robots[0].robotSize);
        
+       /*Scanner sc = new Scanner(System.in);
+       System.out.println("enter new string");
+       String input = sc.nextLine();
+       System.out.println(input);*/
        
+       String myStr = "Bob";
+       String myOtherStr = "Bob";
+       
+       System.out.println(myStr==myOtherStr);
+       
+       Robot robot3 = new Robot();
+       
+       robot3.robotName = "Bob";
+       robot3.robotSize = 2;
+       
+       System.out.println(robot2 == robot3);
+       
+       Robot robot4 = robot3;
+       
+       System.out.println(robot4 == robot3);
+       
+       robot4.robotName = "Bob";
+       
+       System.out.println(robot4.robotName);
+       System.out.println(robot3.robotName);
+       System.out.println("robot4:" + robot4);
+       System.out.println("robot2:" + robot2);
+       System.out.println("robot3:" +robot3);
+       
+       System.out.println(robot2 == robot3);
+       System.out.println(robot3.equals(robot2));
     }
 }
