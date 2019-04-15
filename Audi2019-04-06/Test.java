@@ -58,6 +58,8 @@ public class Test
        
        car1.carModel = "Tesla";
        car1.carSpeed = 70;
+       car1.color = "Red";
+       car1.hasSunRoof = true;
        
        Car [] cars = new Car [1];
           
