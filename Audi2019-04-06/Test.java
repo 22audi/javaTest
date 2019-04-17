@@ -66,6 +66,8 @@ public class Test
        cars[0] = car1;
        
        System.out.println("the car model is " + cars[0].carModel);
+       cars[0].Drive(5);
+       cars[0].Speed(70);
        
        Robot robot1 = new Robot();
        
